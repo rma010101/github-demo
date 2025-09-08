@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Verify') {
+        stage('Check Docker Version') {
             steps {
                 // This command lists the files to verify they were checked out correctly
-                bat 'dir'
+                bat 'docker--version'
             }
         }
     }
