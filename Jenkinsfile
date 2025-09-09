@@ -14,7 +14,7 @@ pipeline {
                 bat 'dir'
             }
         }
-        stage('Build Docker Image') {
+       /*  stage('Build Docker Image') {
             steps {
                 // This command lists the files to verify they were checked out correctly
                 bat 'docker build -t rma010101/github-demo3 .'
@@ -26,7 +26,7 @@ pipeline {
                     bat 'docker login -u %DOCKER_USERNAME% -p %DOCKER_PASSWORD%'
                     bat 'docker push rma010101/github-demo3'
                 }
-            }
+            } */
         }
     }
 }
